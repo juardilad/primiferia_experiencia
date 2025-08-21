@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';   
-import LogoCanvas from '../components/LogoCanvas';
+import TEMSCanvas from '../components/TEMSCanvas';
 import TEMSInfo from '../components/TEMSInfo';
 import styles from '../styles/TEMS.module.css';
 
@@ -9,7 +9,7 @@ function TEMSView() {
   return (
     <div className='view-container'>
       <TEMSInfo />
-      <LogoCanvas />
+      <TEMSCanvas />
     </div>
   );
 }

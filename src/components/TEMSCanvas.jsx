@@ -39,7 +39,7 @@ function OscillatingModel({
 useGLTF.preload('/models/TEMS_Logo_3D.gltf')
 
 
-function LogoCanvas() {
+function TEMSCanvas() {
 
   return (
     <div className={styles.logo_canvas}>
@@ -73,4 +73,4 @@ function LogoCanvas() {
   );
 }
 
-export default LogoCanvas;
+export default TEMSCanvas;
