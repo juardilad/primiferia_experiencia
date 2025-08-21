@@ -43,9 +43,6 @@ function LogoCanvas() {
 
   return (
     <div className={styles.logo_canvas}>
-      <div className={styles.audio_space}>
-        <h1>AudioSpace</h1>
-      </div>
       <div className={styles.logo_space}>
         <Canvas
           camera={{ position: [0, 0.6, 2.2], fov: 45 }}

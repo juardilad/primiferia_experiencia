@@ -25,7 +25,11 @@ function TEMSInfo() {
                 comunidad universitaria. Asimismo, busca mejorar los conocimientos en la 
                 gestión de proyectos de los estudiantes, promoviendo su éxito.</p>
         </div>
-        <button className={styles.back_button}>Regresar</button>
+        <div className={styles.footer}>
+            <button className={styles.back_button}>Regresar</button>
+            <img src='/images/qr_tems.png' alt="QR Instagram TEMS" className={styles.qr_code}></img>
+        </div>
+        
     </div>
   );
 }
