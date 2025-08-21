@@ -20,7 +20,7 @@ function App() {
     
         <Routes>
           <Route path="/" element={<RamaView />} />
-          {/* <Route path="/capitulos" element={<MenuCapitulosView />} />
+          <Route path="/capitulos" element={<MenuCapitulosView />} />
           <Route path="/capitulos/tems" element={<TEMSView />} />
           <Route path="/capitulos/wie" element={<WIEView />} />
           <Route path="/capitulos/pes" element={<PESView />} />
@@ -30,7 +30,7 @@ function App() {
           <Route path="/capitulos/eds" element={<EDSView />} />
           <Route path="/capitulos/aps" element={<APSView />} />
           <Route path="/capitulos/aess" element={<AESSView />} />
-          <Route path="/eventos" element={<EventosView />} /> */}
+          <Route path="/eventos" element={<EventosView />} />
         </Routes>
       
   )
