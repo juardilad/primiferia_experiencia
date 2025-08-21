@@ -16,7 +16,7 @@ function RamaInfo() {
         >
           @ieeeunal
           <img
-            src={import.meta.env.BASE_URL + 'icons/instagram.svg'}
+            src={import.meta.env.BASE_URL + '/icons/instagram.svg'}
             alt="Instagram icon"
             className={styles.ig_icon}
           />
@@ -47,7 +47,7 @@ function RamaInfo() {
 
       <div className={styles.footer}>
         <img
-          src={import.meta.env.BASE_URL + 'images/qr_rama.png'}
+          src={import.meta.env.BASE_URL + '/images/qr_rama.png'}
           alt="QR Instagram Rama"
           className={styles.qr_code}
         />

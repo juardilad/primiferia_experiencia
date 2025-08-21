@@ -15,7 +15,7 @@ function AESSInfo() {
                 className={styles.ig_info}
             >
                 @aess_un
-                <img src='/icons/instagram.svg' alt="Instagram icon" className={styles.ig_icon}></img>
+                <img src={import.meta.env.BASE_URL + '/icons/instagram.svg'} alt="Instagram icon" className={styles.ig_icon}></img>
             </a>
         </div>
         <div className={styles.body_info}>
@@ -41,7 +41,7 @@ function AESSInfo() {
             <Link to="/capitulos">
                 <button className={styles.back_button} >Regresar</button>
             </Link>
-            <img src='/images/qr_aess.png' alt="QR Instagram AESS" className={styles.qr_code}></img>
+            <img src={import.meta.env.BASE_URL + '/images/qr_aess.png'} alt="QR Instagram AESS" className={styles.qr_code}></img>
         </div>
         
     </div>

@@ -9,7 +9,7 @@ function PESView() {
   return (
     <div className='view-container'>
       <PESInfo />
-      <PESCanvas />
+      {/* <PESCanvas /> */}
     </div>
   );
 }

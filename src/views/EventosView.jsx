@@ -6,39 +6,39 @@ const events = [
     title: "STEM Escribe",
     description:
       "Concurso realizado anualmente por el grupo estudiantil TEMS siguiendo su misión de promover las habilidades blandas. Este espacio está diseñado para que los estudiantes exploren su creatividad y pongan en práctica sus habilidades de escritura, realizando pequeñas obras literarias y en donde se enfrentarán, si desean, su pánico a hablar en público exponiendo sus textos.",
-    image: "/images/stem_escribe.png",
+    image: import.meta.env.BASE_URL + "/images/stem_escribe.png",
     organizer: "TEMS",
   },
   {
     title: "Impactando el Colectivo",
     description:
       "Serie de actividades, talleres y charlas organizados por TEMS sobre salud mental, gestión de proyectos y habilidades blandas, con invitados especiales.",
-    image: "/images/impactando_colectivo.png",
+    image: import.meta.env.BASE_URL + "/images/impactando_colectivo.png",
     organizer: "TEMS, WIE, Rama IEEE",
   },
   {
     title: "UNRobot",
     description:
       "La competencia anual de robótica más grande y gratuita de Colombia, que reúne a personas de todas las edades interesadas en aprender y disfrutar de la robótica.",
-    image: "/images/unrobot.jpg",
+    image: import.meta.env.BASE_URL + "/images/unrobot.jpg",
     organizer: "RAS",
   },
   {
     title: "Taller de Arduino",
     description: "Aprende a programar y usar Arduino en proyectos prácticos.",
-    image: "/images/taller_arduino.png",
+    image: import.meta.env.BASE_URL + "/images/taller_arduino.png",
     organizer: "RAS",
   },
   {
     title: "Taller de modelado 3D",
     description: "Explora el diseño y modelado en 3D para ingeniería y prototipado.",
-    image: "/images/taller_modelado.png",
+    image: import.meta.env.BASE_URL + "/images/taller_modelado.png",
     organizer: "RAS",
   },
   {
     title: "Taller de programación",
     description: "Iniciación en programación aplicada a proyectos de ingeniería.",
-    image: "/images/taller_programacion.png",
+    image: import.meta.env.BASE_URL + "/images/taller_programacion.png",
     organizer: "RAS",
   },
   {

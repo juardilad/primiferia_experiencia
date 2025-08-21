@@ -15,7 +15,7 @@ function TEMSInfo() {
                 className={styles.ig_info}
             >
                 @temsunal
-                <img src='/icons/instagram.svg' alt="Instagram icon" className={styles.ig_icon}></img>
+                <img src={import.meta.env.BASE_URL + '/icons/instagram.svg'} alt="Instagram icon" className={styles.ig_icon}></img>
             </a>
         </div>
         <div className={styles.body_info}>
@@ -42,7 +42,7 @@ function TEMSInfo() {
             <Link to="/capitulos">
                 <button className={styles.back_button} >Regresar</button>
             </Link>
-            <img src='/images/qr_tems.png' alt="QR Instagram TEMS" className={styles.qr_code}></img>
+            <img src={import.meta.env.BASE_URL + '/images/qr_tems.png'} alt="QR Instagram TEMS" className={styles.qr_code}></img>
         </div>
         
     </div>

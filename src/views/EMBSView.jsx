@@ -9,7 +9,7 @@ function EMBSView() {
   return (
     <div className='view-container'>
       <EMBSInfo />
-      <EMBSCanvas />
+      {/* <EMBSCanvas /> */}
     </div>
   );
 }

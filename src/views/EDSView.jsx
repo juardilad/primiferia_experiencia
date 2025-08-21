@@ -9,7 +9,7 @@ function EDSView() {
   return (
     <div className='view-container'>
       <EDSInfo />
-      <EDSCanvas />
+      {/* <EDSCanvas /> */}
     </div>
   );
 }

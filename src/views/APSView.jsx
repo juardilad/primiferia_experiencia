@@ -9,7 +9,7 @@ function APSView() {
   return (
     <div className='view-container'>
       <APSInfo />
-      <APSCanvas />
+      {/* <APSCanvas /> */}
     </div>
   );
 }
