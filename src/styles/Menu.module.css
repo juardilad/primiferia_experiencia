@@ -77,22 +77,6 @@
     margin-top: 20px;
 }
 
-.title{
-  font-size: 3rem;
-  font-weight: 900;
-  margin-top: 0;
-  margin-bottom: 10px;
-  line-height: 1;
-}
-
-.text{
-  font-size: 1rem;
-  font-weight: 500;
-  margin-top: 0;
-  margin-bottom: 7px;
-  line-height: 1;
-  text-align: justify;
-}
 
 @media(max-width:700px){
     .menu_container {
