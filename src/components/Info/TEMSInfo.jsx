@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react'; 
-import styles from '../styles/TEMS.module.css';
+import styles from '../../styles/TEMS.module.css';
 import { Link } from "react-router-dom";
 
 function TEMSInfo() {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';   
-import TEMSCanvas from '../components/TEMSCanvas';
-import TEMSInfo from '../components/TEMSInfo';
+import TEMSCanvas from '../components/Canvas/TEMSCanvas';
+import TEMSInfo from '../components/Info/TEMSInfo';
 import styles from '../styles/TEMS.module.css';
 
 function TEMSView() {

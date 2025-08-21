@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';   
-import WIECanvas from '../components/WIECanvas';
-import WIEInfo from '../components/WIEInfo';
+import WIECanvas from '../components/Canvas/WIECanvas';
+import WIEInfo from '../components/Info/WIEInfo';
 import styles from '../styles/WIE.module.css';
 
 function WIEView() {

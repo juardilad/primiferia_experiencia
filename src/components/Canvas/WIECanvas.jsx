@@ -2,7 +2,7 @@ import React from 'react';
 import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Center } from '@react-three/drei';
-import styles from '../styles/WIE.module.css';
+import styles from '../../styles/WIE.module.css';
 
 function OscillatingModel({
   url = '/models/WIE_Logo_3D.gltf',

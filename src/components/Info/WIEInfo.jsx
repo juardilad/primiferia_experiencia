@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react'; 
-import styles from '../styles/WIE.module.css';
+import styles from '../../styles/WIE.module.css';
 import { Link } from "react-router-dom";
 
 function WIEInfo() {
