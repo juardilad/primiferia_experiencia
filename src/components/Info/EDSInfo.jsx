@@ -20,7 +20,7 @@ function EDSInfo() {
         </div>
         <div className={styles.body_info}>
             <p className={styles.title}>EDS</p>
-            <p className={styles.subtitle}>Technology and Engineering Management Society</p>
+            <p className={styles.subtitle}>Electron Devices Society</p>
             <p className={styles.text}>¡Electrónica para todos! Ese es nuestro
                 objetivo como capítulo EDS UN, pertenciente
                 a la Rama Estudiantil IEEE UN. Desde nuestro
