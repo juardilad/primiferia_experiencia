@@ -2,10 +2,10 @@ import React from 'react';
 import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Center } from '@react-three/drei';
-import styles from '../../styles/CS.module.css';
+import styles from '../../styles/EDS.module.css';
 
 function OscillatingModel({
-  url = '/models/CS_Logo_3D.gltf',
+  url = '/models/EDS_Logo_3D.gltf',
   position = [0, 0, 0],
   rotation = [0, 0, 0],   
   scale = 1,
@@ -36,10 +36,10 @@ function OscillatingModel({
   )
 }
 // precarga (opcional, mejora UX)
-useGLTF.preload('/models/CS_Logo_3D.gltf')
+useGLTF.preload('/models/EDS_Logo_3D.gltf')
 
 
-function CSCanvas() {
+function EDSCanvas() {
 
   return (
     <div className={styles.logo_canvas}>
@@ -53,12 +53,12 @@ function CSCanvas() {
 
           <Suspense fallback={null}>
             {/* Center ajusta y centra el modelo automáticamente */}
-            <Center disableY disableX>
+            <Center disableY>
               <OscillatingModel
-                url="/models/CS_Logo_3D.gltf"
-                position={[-0.4, -0.8, 0]}            
+                url="/models/EDS_Logo_3D.gltf"
+                position={[0, 0, 0]}            
                 rotation={[Math.PI / 2, Math.PI, Math.PI]}               
-                scale={7.0}
+                scale={12.0}
                 amplitudeDeg={45}                   
                 speed={0.8}                         
               />
@@ -73,4 +73,4 @@ function CSCanvas() {
   );
 }
 
-export default CSCanvas;
+export default EDSCanvas;
