@@ -18,7 +18,6 @@ function App() {
 
   return (
     
-    <Router>
         <Routes>
           <Route path="/" element={<RamaView />} />
           <Route path="/capitulos" element={<MenuCapitulosView />} />
@@ -33,7 +32,6 @@ function App() {
           <Route path="/capitulos/aess" element={<AESSView />} />
           <Route path="/eventos" element={<EventosView />} />
         </Routes>
-    </Router>
       
   )
 }
