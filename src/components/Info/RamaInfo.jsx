@@ -25,7 +25,6 @@ function RamaInfo() {
 
       <div className={styles.body_info}>
         <p className={styles.title}>Rama IEEE</p>
-        <p className={styles.subtitle}>Technology and Engineering Management Society</p>
         <p className={styles.text}>
           La Rama Estudiantil IEEE de la Universidad Nacional de Colombia es un grupo estudiantil, asociado al Institute of Electrical and Electronics Engineers (IEEE), perteneciente a la región 9 comprendida por Latinoamérica y el Caribe, e igualmente a Sección Colombia.
           Actualmente contamos con más de 150 voluntarios.

@@ -9,7 +9,7 @@ function TEMSView() {
   return (
     <div className='view-container'>
       <CSInfo />
-      {/* <CSCanvas /> */}
+      <CSCanvas />
     </div>
   );
 }

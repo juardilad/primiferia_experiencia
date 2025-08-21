@@ -9,7 +9,7 @@ function AESSView() {
   return (
     <div className='view-container'>
       <AESSInfo />
-      {/* <AESSCanvas /> */}
+      <AESSCanvas />
     </div>
   );
 }

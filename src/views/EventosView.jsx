@@ -107,7 +107,7 @@ function EventosView() {
                         />
                     ) : (
                         <img
-                            src='/images/evento_placeholder.png'
+                            src={import.meta.env.BASE_URL + '/images/evento_placeholder.png'}
                             alt='imagen_placeholder'
                             className={styles.image}
                         />

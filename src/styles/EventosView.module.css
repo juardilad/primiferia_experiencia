@@ -8,11 +8,18 @@
     background-color: var(--blanco);
     padding: 30px;
     box-sizing: border-box;
+    font-family: 'UNAL Ancizar Sans', sans-serif;
+    font-weight: 400;
+    color: var(--negro);
 }
 
 .back_button{
     background-color: var(--negro);
     color: var(--blanco);
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
 }
 
 .grid {

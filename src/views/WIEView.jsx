@@ -9,7 +9,7 @@ function WIEView() {
   return (
     <div className='view-container'>
       <WIEInfo />
-      {/* <WIECanvas /> */}
+      <WIECanvas />
     </div>
   );
 }

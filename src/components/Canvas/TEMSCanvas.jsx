@@ -5,7 +5,7 @@ import { useGLTF, OrbitControls, Center } from '@react-three/drei';
 import styles from '../../styles/TEMS.module.css';
 
 function OscillatingModel({
-  url = '/models/TEMS_Logo_3D.gltf',
+  url = import.meta.env.BASE_URL + 'models/TEMS_Logo_3D.gltf',
   position = [0, 0, 0],
   rotation = [0, 0, 0],   
   scale = 1,
@@ -36,7 +36,7 @@ function OscillatingModel({
   )
 }
 // precarga (opcional, mejora UX)
-useGLTF.preload('/models/TEMS_Logo_3D.gltf')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/TEMS_Logo_3D.gltf')
 
 
 function TEMSCanvas() {
@@ -55,7 +55,7 @@ function TEMSCanvas() {
             {/* Center ajusta y centra el modelo automáticamente */}
             <Center disableY>
               <OscillatingModel
-                url="/models/TEMS_Logo_3D.gltf"
+                url={import.meta.env.BASE_URL + "models/TEMS_Logo_3D.gltf"}
                 position={[0, 0, 0]}            
                 rotation={[Math.PI / 2, Math.PI, Math.PI]}               
                 scale={4.0}

@@ -5,7 +5,7 @@ import { useGLTF, OrbitControls, Center } from '@react-three/drei';
 import styles from '../../styles/RAS.module.css';
 
 function OscillatingModel({
-  url = '/models/RAS_Logo_3D.gltf',
+  url = import.meta.env.BASE_URL + 'models/RAS_Logo_3D.gltf',
   position = [0, 0, 0],
   rotation = [0, 0, 0],   
   scale = 1,
@@ -36,7 +36,7 @@ function OscillatingModel({
   )
 }
 // precarga (opcional, mejora UX)
-useGLTF.preload('/models/RAS_Logo_3D.gltf')
+useGLTF.preload(import.meta.env.BASE_URL + 'models/RAS_Logo_3D.gltf')
 
 
 function RASCanvas() {
@@ -55,7 +55,7 @@ function RASCanvas() {
             {/* Center ajusta y centra el modelo automáticamente */}
             <Center disableY disableX>
               <OscillatingModel
-                url="/models/RAS_Logo_3D.gltf"
+                url={import.meta.env.BASE_URL + "models/RAS_Logo_3D.gltf"}
                 position={[-0.7, -0.5, 0]}            
                 rotation={[Math.PI / 2, Math.PI, Math.PI]}               
                 scale={10.0}

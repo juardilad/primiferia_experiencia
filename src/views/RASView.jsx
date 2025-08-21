@@ -9,7 +9,7 @@ function RASView() {
   return (
     <div className='view-container'>
       <RASInfo />
-      {/* <RASCanvas /> */}
+      <RASCanvas />
     </div>
   );
 }
