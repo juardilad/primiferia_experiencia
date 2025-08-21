@@ -27,7 +27,7 @@ function EMBSInfo() {
                 No importa si eres estudiante de ingeniería biomédica, biología, o simplemente 
                 estás interesado en estas áreas, ¡eres bienvenido a unirte a nuestra comunidad! </p>
             <p className={styles.list_title}>Proyectos:</p>
-            <p className={styles.text}>- Aura. 
+            <p className={styles.text}>- Aura: Sistema de monitoreo de signos vitales en tiempo real mediante dispositivos electrónicos personalizados. 
             </p>
             <p className={styles.text}>- GymMio: Monitoreador de señales myoelectricas para fatiga. 
             </p>
