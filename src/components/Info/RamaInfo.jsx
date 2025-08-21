@@ -41,6 +41,7 @@ function RamaInfo() {
           <Link to="/eventos">
             <button className={styles.back_button}>Eventos</button>
           </Link>
+          <a href='https://forms.gle/Ld4Y7W8d4iDVTiRM6' className={styles.back_button}>Inscríbete</a>
         </div>
       </div>
 

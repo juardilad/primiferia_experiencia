@@ -3,6 +3,7 @@ import { useState } from 'react';
 import AESSCanvas from '../components/Canvas/AESSCanvas';
 import AESSInfo from '../components/Info/AESSInfo';
 import styles from '../styles/AESS.module.css';
+import ScrollToTopButton from "../components/ScrollToTopButton";
 
 function AESSView() {
 
@@ -10,6 +11,7 @@ function AESSView() {
     <div className='view-container'>
       <AESSInfo />
       <AESSCanvas />
+      <ScrollToTopButton />
     </div>
   );
 }
