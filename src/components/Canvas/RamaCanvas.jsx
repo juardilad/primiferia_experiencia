@@ -1,46 +1,36 @@
-import React from 'react';
-import { Suspense, useRef } from 'react';
+import React, { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Center } from '@react-three/drei';
 import styles from '../../styles/Rama.module.css';
 
 function OscillatingModel({
-  url = '/models/Rama_Logo_3D.gltf',
+  url = import.meta.env.BASE_URL + 'models/Rama_Logo_3D.gltf',
   position = [0, 0, 0],
   rotation = [0, 0, 0],   
   scale = 1,
   amplitudeDeg = 45,      
   speed = 0.8
 }) {
-
-  const group = useRef()
-  const { scene } = useGLTF(url)
+  const group = useRef();
+  const { scene } = useGLTF(url);
 
   useFrame(({ clock }) => {
-    const t = clock.getElapsedTime()
-    const amp = (amplitudeDeg * Math.PI) / 180
+    const t = clock.getElapsedTime();
+    const amp = (amplitudeDeg * Math.PI) / 180;
     if (group.current) {
-      group.current.rotation.x = rotation[0]
-      group.current.rotation.y = rotation[1]
-      group.current.rotation.z = rotation[2] + Math.sin(t * speed) * amp
+      group.current.rotation.x = rotation[0];
+      group.current.rotation.y = rotation[1];
+      group.current.rotation.z = rotation[2] + Math.sin(t * speed) * amp;
     }
-  })
+  });
 
-  return (
-    <primitive
-      ref={group}
-      object={scene}
-      position={position}
-      scale={scale}
-    />
-  )
+  return <primitive ref={group} object={scene} position={position} scale={scale} />;
 }
-// precarga (opcional, mejora UX)
-useGLTF.preload('/models/Rama_Logo_3D.gltf')
 
+// Precarga del modelo (opcional, mejora UX)
+useGLTF.preload(import.meta.env.BASE_URL + 'models/Rama_Logo_3D.gltf');
 
 function RamaCanvas() {
-
   return (
     <div className={styles.logo_canvas}>
       <div className={styles.logo_space}>
@@ -55,12 +45,12 @@ function RamaCanvas() {
             {/* Center ajusta y centra el modelo automáticamente */}
             <Center disableY>
               <OscillatingModel
-                url="/models/Rama_Logo_3D.gltf"
-                position={[0, -0.3, 0]}            
-                rotation={[Math.PI / 2, Math.PI, Math.PI]}               
+                url={import.meta.env.BASE_URL + 'models/Rama_Logo_3D.gltf'}
+                position={[0, -0.3, 0]}
+                rotation={[Math.PI / 2, Math.PI, Math.PI]}
                 scale={7.0}
-                amplitudeDeg={45}                   
-                speed={0.8}                         
+                amplitudeDeg={45}
+                speed={0.8}
               />
             </Center>
           </Suspense>
