@@ -9,6 +9,7 @@ import EMBSView from './views/EMBSView'
 import CSView from './views/CSView'
 import EDSView from './views/EDSView'
 import APSView from './views/APSView'
+import AESSView from './views/AESSView'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/capitulos/computer_society" element={<CSView />} />
           <Route path="/capitulos/eds" element={<EDSView />} />
           <Route path="/capitulos/aps" element={<APSView />} />
+          <Route path="/capitulos/aess" element={<AESSView />} />
         </Routes>
     </Router>
       
