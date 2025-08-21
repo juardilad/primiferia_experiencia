@@ -12,6 +12,7 @@ import APSView from './views/APSView'
 import AESSView from './views/AESSView'
 import MenuCapitulosView from './views/MenuCapitulosView'
 import EventosView from './views/EventosView'
+import MenuPrincipal from './views/MenuPrincipal'
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
     
     <Router>
         <Routes>
+          <Route path="/" element={<MenuPrincipal />} />
           <Route path="/capitulos" element={<MenuCapitulosView />} />
           <Route path="/capitulos/tems" element={<TEMSView />} />
           <Route path="/capitulos/wie" element={<WIEView />} />

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import MenuCapitulos from '../components/MenuCapitulos';
 import styles from '../styles/Menu.module.css';
 
-function EMBSView() {
+function MenuCapitulosView() {
   const navigate = useNavigate();
 
   return (
@@ -17,4 +17,4 @@ function EMBSView() {
   );
 }
 
-export default EMBSView;
+export default MenuCapitulosView;
