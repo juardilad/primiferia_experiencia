@@ -10,6 +10,8 @@ import CSView from './views/CSView'
 import EDSView from './views/EDSView'
 import APSView from './views/APSView'
 import AESSView from './views/AESSView'
+import MenuCapitulosView from './views/MenuCapitulosView'
+import EventosView from './views/EventosView'
 
 function App() {
 
@@ -17,6 +19,7 @@ function App() {
     
     <Router>
         <Routes>
+          <Route path="/capitulos" element={<MenuCapitulosView />} />
           <Route path="/capitulos/tems" element={<TEMSView />} />
           <Route path="/capitulos/wie" element={<WIEView />} />
           <Route path="/capitulos/pes" element={<PESView />} />
@@ -26,6 +29,7 @@ function App() {
           <Route path="/capitulos/eds" element={<EDSView />} />
           <Route path="/capitulos/aps" element={<APSView />} />
           <Route path="/capitulos/aess" element={<AESSView />} />
+          <Route path="/eventos" element={<EventosView />} />
         </Routes>
     </Router>
       
