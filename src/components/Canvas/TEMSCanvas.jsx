@@ -57,7 +57,7 @@ function TEMSCanvas() {
               <OscillatingModel
                 url="/models/TEMS_Logo_3D.gltf"
                 position={[0, 0, 0]}            
-                rotation={[Math.PI / 2, Math.PI, 0]}               
+                rotation={[Math.PI / 2, Math.PI, Math.PI]}               
                 scale={5.0}
                 amplitudeDeg={45}                   
                 speed={0.8}                         

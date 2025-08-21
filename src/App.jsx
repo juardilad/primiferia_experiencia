@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import TEMSView from './views/TEMSView'
 import WIEView from './views/WIEView'
+import PESView from './views/PESView'
 
 function App() {
 
@@ -10,8 +11,9 @@ function App() {
     
     <Router>
         <Routes>
-          <Route path="/tems" element={<TEMSView />} />
-          <Route path="/wie" element={<WIEView />} />
+          <Route path="/capitulos/tems" element={<TEMSView />} />
+          <Route path="/capitulos/wie" element={<WIEView />} />
+          <Route path="/capitulos/pes" element={<PESView />} />
         </Routes>
     </Router>
       

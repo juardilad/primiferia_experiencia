@@ -2,10 +2,10 @@ import React from 'react';
 import { Suspense, useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF, OrbitControls, Center } from '@react-three/drei';
-import styles from '../../styles/WIE.module.css';
+import styles from '../../styles/PES.module.css';
 
 function OscillatingModel({
-  url = '/models/WIE_Logo_3D.gltf',
+  url = '/models/PES_Logo_3D.gltf',
   position = [0, 0, 0],
   rotation = [0, 0, 0],   
   scale = 1,
@@ -36,10 +36,10 @@ function OscillatingModel({
   )
 }
 // precarga (opcional, mejora UX)
-useGLTF.preload('/models/WIE_Logo_3D.gltf')
+useGLTF.preload('/models/PES_Logo_3D.gltf')
 
 
-function WIECanvas() {
+function PESCanvas() {
 
   return (
     <div className={styles.logo_canvas}>
@@ -53,12 +53,12 @@ function WIECanvas() {
 
           <Suspense fallback={null}>
             {/* Center ajusta y centra el modelo automáticamente */}
-            <Center disableY>
+            <Center disableY disableX>
               <OscillatingModel
-                url="/models/WIE_Logo_3D.gltf"
-                position={[0, 0, 0]}            
+                url="/models/PES_Logo_3D.gltf"
+                position={[-0.5, -0.7, 0]}            
                 rotation={[Math.PI / 2, Math.PI, Math.PI]}               
-                scale={1.7}
+                scale={13.0}
                 amplitudeDeg={45}                   
                 speed={0.8}                         
               />
@@ -73,4 +73,4 @@ function WIECanvas() {
   );
 }
 
-export default WIECanvas;
+export default PESCanvas;
