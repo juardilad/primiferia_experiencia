@@ -1,15 +1,15 @@
 import React from 'react';
 import { useState } from 'react';   
-import TEMSCanvas from '../components/Canvas/TEMSCanvas';
-import TEMSInfo from '../components/Info/TEMSInfo';
-import styles from '../styles/TEMS.module.css';
+import CSCanvas from '../components/Canvas/CSCanvas';
+import CSInfo from '../components/Info/CSInfo';
+import styles from '../styles/CS.module.css';
 
 function TEMSView() {
 
   return (
     <div className='view-container'>
-      <TEMSInfo />
-      <TEMSCanvas />
+      <CSInfo />
+      <CSCanvas />
     </div>
   );
 }

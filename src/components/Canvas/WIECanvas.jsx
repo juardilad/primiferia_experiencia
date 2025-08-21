@@ -58,7 +58,7 @@ function WIECanvas() {
                 url="/models/WIE_Logo_3D.gltf"
                 position={[0, 0, 0]}            
                 rotation={[Math.PI / 2, Math.PI, Math.PI]}               
-                scale={1.7}
+                scale={1.5}
                 amplitudeDeg={45}                   
                 speed={0.8}                         
               />
