@@ -5,6 +5,7 @@ import TEMSView from './views/TEMSView'
 import WIEView from './views/WIEView'
 import PESView from './views/PESView'
 import RASView from './views/RASView'
+import EMBSView from './views/EMBSView'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/capitulos/wie" element={<WIEView />} />
           <Route path="/capitulos/pes" element={<PESView />} />
           <Route path="/capitulos/ras" element={<RASView />} />
+          <Route path="/capitulos/embs" element={<EMBSView />} />
         </Routes>
     </Router>
       

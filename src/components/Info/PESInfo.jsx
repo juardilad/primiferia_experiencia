@@ -30,7 +30,7 @@ function PESInfo() {
                 el espacio que buscas para aprender.
             </p>
             <p className={styles.list_title}>Proyectos:</p>
-            <p className={styles.text}>- Talleres de StepWatt</p>
+            <p className={styles.text}>- Talleres de StepWatt.</p>
             <Link to="/eventos">
                 <p className={styles.text}>- Mujeres en potencia (Ver eventos)</p>
             </Link>

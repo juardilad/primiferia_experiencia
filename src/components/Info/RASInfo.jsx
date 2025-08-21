@@ -33,12 +33,12 @@ function RASInfo() {
             <Link to="/eventos">
                 <p className={styles.text}>- UNRobot (Ver eventos)</p>
             </Link>
-            <p className={styles.text}>- Minisumo </p>
-            <p className={styles.text}>- Velocista </p>
-            <p className={styles.text}>- CNC </p>
-            <p className={styles.text}>- Brazo Robótico </p>
-            <p className={styles.text}>- Enigma </p>
-            <p className={styles.text}>- Reconocimiento de letra de señas </p>
+            <p className={styles.text}>- Minisumo. </p>
+            <p className={styles.text}>- Velocista. </p>
+            <p className={styles.text}>- CNC. </p>
+            <p className={styles.text}>- Brazo Robótico. </p>
+            <p className={styles.text}>- Enigma. </p>
+            <p className={styles.text}>- Reconocimiento de letra de señas. </p>
         </div>
         <div className={styles.footer}>
             <Link to="/capitulos">
